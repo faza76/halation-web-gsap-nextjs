@@ -16,7 +16,9 @@ import SplitType from "split-type";
 import ReactLenis from "@studio-freight/react-lenis";
 
 import { HiArrowRight } from "react-icons/hi";
+import { HiArrowDown } from "react-icons/hi";
 import { RiArrowRightDownLine } from "react-icons/ri";
+import { RiArrowRightUpLine } from "react-icons/ri";
 
 const Home = () => {
   const manifestoRef = useRef(null);
@@ -175,11 +177,44 @@ const Home = () => {
 
     const rows = document.querySelectorAll(".row");
     const isMobileView = window.innerWidth <= 900;
+    let getRatio = el => window.innerHeight / (window.innerHeight + el.offsetHeight);
+
+    const divider = gsap.utils.toArray(".divider");
+    const showreel = document.querySelector(".video-container")
+    const hero = document.querySelector(".header-container");
 
     const getStartX = (index) => {
       const direction = index % 2 === 0 ? 1 : -1;
       return direction * (isMobileView ? 150 : 300);
     };
+    gsap.to(hero, {
+      // backgroundPosition: () => `50% ${window.innerHeight * (1 - getRatio(showreel))}px`,
+      translateY: "600px",
+      scale: 1.5,
+      ease: "none",
+      scrollTrigger: {
+        trigger: hero,
+        start: "top top",
+        end: "bottom top",
+        scrub: true,
+        invalidateOnRefresh: true
+      }
+    });
+    
+
+    gsap.to(showreel, {
+      // backgroundPosition: () => `50% ${window.innerHeight * (1 - getRatio(showreel))}px`,
+      translateY: "600px",
+      scale: 1.5,
+      ease: "none",
+      scrollTrigger: {
+        trigger: showreel,
+        start: "top top",
+        end: "bottom top",
+        scrub: true,
+        invalidateOnRefresh: true
+      }
+    });
 
     if (rows.length > 0) {
       rows.forEach((row, index) => {
@@ -193,6 +228,7 @@ const Home = () => {
         const startX = getStartX(index);
 
         gsap.set(row, { x: startX });
+        // gsap.set(divider, { x: "0%"});
 
         gsap.to(row, {
           scrollTrigger: {
@@ -208,6 +244,20 @@ const Home = () => {
             },
           },
         });
+
+        divider.forEach((div) => {
+          gsap.to(div, {
+            scaleX: "100%",
+            duration: 1,
+            stagger: 0.5,
+            ease: "power3.inOut",
+            scrollTrigger: {
+              trigger: div,
+              start: "top 80%",
+            }
+          })
+        });
+        
       });
     }
 
@@ -246,11 +296,18 @@ const Home = () => {
         <section className="work" id="work">
           <div className="container">
             <div className="work-header">
-              <HiArrowRight size={13} />
-              <p>Selected projects</p>
+              <div className="work-header-container">
+                {/* <HiArrowDown size={16} /> */}
+                <p>Selected projects</p>
+                <div className="work-header-all-works">
+                  <RiArrowRightUpLine size={18} />
+                  <p>See All Work</p>
+                </div>
+              </div>
             </div>
 
             <div className="projects">
+            {/* <p>Selected projects</p> */}
               <div className="project-col">
                 {projects
                   .filter((project) => project.column === 1)
@@ -332,6 +389,7 @@ const Home = () => {
         <section className="processes">
           <div className="container">
             <div className="process">
+              <div className="divider"></div>
               <div className="process-title">
                 <RiArrowRightDownLine />
                 <p>Integrate</p>
@@ -344,16 +402,14 @@ const Home = () => {
                 </div>
                 <div className="process-description">
                   <p>
-                    Rooted in creativity, Origin bridges cultures to craft
-                    designs that transcend time and place. We thrive at the
-                    intersection of ideas, uniting diverse perspectives into a
-                    seamless vision.
+                  We turn founders’ visions into remarkable brands by combining strategy, design, and performance marketing, all under one roof. Explore our services.
                   </p>
                 </div>
               </div>
             </div>
 
             <div className="process">
+            <div className="divider"></div>
               <div className="process-title">
                 <RiArrowRightDownLine />
                 <p>Collaborate</p>
@@ -375,6 +431,8 @@ const Home = () => {
             </div>
 
             <div className="process">
+            <div className="divider"></div>
+
               <div className="process-title">
                 <RiArrowRightDownLine />
                 <p>Challenge</p>

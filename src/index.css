@@ -41,6 +41,12 @@
   src: url("./assets/fonts/RoobertTRIAL-Heavy.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Suissei";
+  font-weight: 100;
+  src: url("./assets/fonts/SuisseIntl-Light.woff2") format("truetype");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -99,8 +105,9 @@ h2 {
 p {
   position: relative;
   font-size: 0.8rem;
-  font-weight: 400;
+  font-weight: 100;
   line-height: 1;
+  /* font-family: Suissei; */
   will-change: transform, opacity;
 }
 
