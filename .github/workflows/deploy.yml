@@ -13,7 +13,7 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: 22
+        node-version: '18'
         
     - name: Install and Build
       run: |
@@ -21,12 +21,12 @@ jobs:
         npm run build
         
 
-      - name: 📂 Sync files with FTP server
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-        with:
-          server: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./dist/
-          server-dir: /  # Root of the restricted FTP account
-          dangerous-clean-slate: true
+    - name: 📂 Sync files with FTP server
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.FTP_HOST }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ./dist/
+        server-dir: /  # Root of the restricted FTP account
+        dangerous-clean-slate: true
