@@ -7,6 +7,7 @@ import VideoPlayer from "../../components/VideoPlayer/VideoPlayer";
 import NavBar from "../../components/NavBar/NavBar";
 import Cursor from "../../components/Cursor/Cursor";
 import Transition from "../../components/Transition/Transition";
+import Copy from "../../components/Copy/Copy";
 
 import { projects } from "./projects";
 
@@ -401,9 +402,12 @@ const Home = () => {
                   </div>
                 </div>
                 <div className="process-description">
-                  <p>
-                  We turn founders’ visions into remarkable brands by combining strategy, design, and performance marketing, all under one roof. Explore our services.
-                  </p>
+                  <Copy delay={0.5}>
+                    <p>
+                    We turn founders’ visions into remarkable brands by combining strategy, design, and performance marketing, all under one roof. Explore our services.
+                    </p>  
+                  </Copy>
+                  
                 </div>
               </div>
             </div>
@@ -421,11 +425,13 @@ const Home = () => {
                   </div>
                 </div>
                 <div className="process-description">
-                  <p>
-                    Creativity is a collective process. At Origin, collaboration
-                    is our foundation—merging ideas, talents, and visions to
-                    create experiences that resonate universally.
-                  </p>
+                  <Copy delay={0.5}>
+                    <p>
+                      Creativity is a collective process. At Origin, collaboration
+                      is our foundation—merging ideas, talents, and visions to
+                      create experiences that resonate universally.
+                    </p>
+                  </Copy>
                 </div>
               </div>
             </div>
@@ -444,11 +450,13 @@ const Home = () => {
                   </div>
                 </div>
                 <div className="process-description">
-                  <p>
-                    We challenge conventions and redefine possibilities. At
-                    Origin, we dare to push boundaries, delivering solutions
-                    that are as bold as they are impactful.
-                  </p>
+                  <Copy delay={0.5}>
+                    <p>
+                      We challenge conventions and redefine possibilities. At
+                      Origin, we dare to push boundaries, delivering solutions
+                      that are as bold as they are impactful.
+                    </p>
+                  </Copy>
                 </div>
               </div>
             </div>
