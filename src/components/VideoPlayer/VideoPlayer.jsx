@@ -70,7 +70,7 @@ const VideoPlayer = () => {
         className="video-player"
         onTimeUpdate={handleTimeUpdate}
         onLoadedMetadata={() => setDuration(videoRef.current.duration)}
-        src="/video/showreel.mov"
+        src="/video/showreel.mp4"
         autoPlay
         loop
         playsInline

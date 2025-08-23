@@ -337,6 +337,7 @@ const HeroGradient = () => {
     <div>
       <canvas ref={canvasRef} style={{ willChange: "transform" }} />
       <canvas
+      className="canvas"
         ref={threeCanvasRef}
         style={{
           position: "absolute",

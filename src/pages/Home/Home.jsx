@@ -181,7 +181,7 @@ const Home = () => {
 
     const divider = gsap.utils.toArray(".divider");
     const showreel = document.querySelector(".video-container")
-    const hero = document.querySelector(".header-container");
+    const hero = document.querySelector(".canvas");
 
     const getStartX = (index) => {
       const direction = index % 2 === 0 ? 1 : -1;
@@ -190,7 +190,7 @@ const Home = () => {
     gsap.to(hero, {
       // backgroundPosition: () => `50% ${window.innerHeight * (1 - getRatio(showreel))}px`,
       translateY: "600px",
-      scale: 1.5,
+      // scale: 1.5,
       ease: "none",
       scrollTrigger: {
         trigger: hero,

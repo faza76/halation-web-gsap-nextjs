@@ -124,8 +124,8 @@ const NavBar = () => {
       <div className="navbar-container">
         <div className="logo">
           <a href="#hero">
-            <h3>origin</h3>
-            <span>studio</span>
+            <h3>Halation</h3>
+            <span></span>
           </a>
         </div>
 
