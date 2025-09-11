@@ -396,11 +396,11 @@ const Home = () => {
                 <p>Integrate</p>
               </div>
               <div className="process-info">
-                <div className="process-icon">
+                {/* <div className="process-icon">
                   <div className="process-icon-wrapper">
                     <img src="/processes/icon-1.png" alt="" />
                   </div>
-                </div>
+                </div> */}
                 <div className="process-description">
                   <Copy delay={0.5}>
                     <p>
@@ -419,11 +419,11 @@ const Home = () => {
                 <p>Collaborate</p>
               </div>
               <div className="process-info">
-                <div className="process-icon">
+                {/* <div className="process-icon">
                   <div className="process-icon-wrapper">
                     <img src="/processes/icon-2.png" alt="" />
                   </div>
-                </div>
+                </div> */}
                 <div className="process-description">
                   <Copy delay={0.5}>
                     <p>
@@ -444,11 +444,11 @@ const Home = () => {
                 <p>Challenge</p>
               </div>
               <div className="process-info">
-                <div className="process-icon">
+                {/* <div className="process-icon">
                   <div className="process-icon-wrapper">
                     <img src="/processes/icon-3.png" alt="" />
                   </div>
-                </div>
+                </div> */}
                 <div className="process-description">
                   <Copy delay={0.5}>
                     <p>

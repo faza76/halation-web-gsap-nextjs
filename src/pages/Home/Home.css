@@ -269,6 +269,8 @@ section.work {
 
 .processes {
   height: max-content;
+  background: var(--light4);
+  color: #000;
   /* padding: 1em 1em 4em 1em; */
 }
 
@@ -280,7 +282,7 @@ section.work {
 }
 
 .divider {
-  border-top: 1px solid rgba(255, 255, 255, 0.413);
+  border-top: 1px solid rgba(37, 37, 37, 0.819);
   padding: 1em 0 0 0;
   transform-origin: left;
   transform: scaleX(0%);
@@ -333,7 +335,7 @@ section.work {
 .process-description p {
   line-height: 1.8rem;
   font-size: 1.7rem;
-  color: rgb(255, 255, 255);
+  color: var(--dark);
   text-shadow: none;
   filter: contrast(0.8) brightness(1.2);
   font-stretch: extra-condensed;
@@ -645,8 +647,8 @@ section.work {
 }
 
 .team.light {
-  background-color: #fff;
-  color: #000;
+  background-color: var(--light);
+  color: var(--dark);
 }
 
 .team.light .team-member-toggle {
@@ -654,8 +656,8 @@ section.work {
 }
 
 .footer.light {
-  background-color: #fff;
-  color: #000;
+  background-color: var(--light);
+  color: var(--dark);
 }
 
 .footer.light .footer-email p,
