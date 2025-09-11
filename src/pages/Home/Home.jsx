@@ -64,6 +64,19 @@ const Home = () => {
       },
     });
 
+    ScrollTrigger.create({
+      trigger: ".processes",
+      start: "top 80%",
+      onEnter: () => {
+        document.querySelector(".manifesto").classList.add("light");
+        document.querySelector(".processes").classList.add("light");
+      },
+      onLeaveBack: () => {
+        document.querySelector(".manifesto").classList.remove("light");
+        document.querySelector(".processes").classList.remove("light");
+      },
+    });
+
     if (!isMobile) {
       gsap.set(".project", { opacity: 0.35 });
     }
@@ -352,24 +365,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="cta">
-          <div className="cta-bg-img">
-            <img src="/cta/cta-bg.png" alt="" />
-          </div>
-          <div className="cta-title">
-            <p>Trusted by visionaries</p>
-          </div>
-          <div className="cta-header">
-            <h2>
-              Apple, Netflix, Gucci, Tesla, Uniqlo, Sephora, Google, Moët &
-              Chandon, Spotify, BMW, Montblanc, Panasonic, Nespresso, L’Oréal,
-              Samsung
-            </h2>
-          </div>
-          <div className="cta-btn">
-            <button>Discover more at origin.co</button>
-          </div>
-        </section>
+        
 
         <section className="manifesto" id="manifesto" ref={manifestoRef}>
           <div className="container">

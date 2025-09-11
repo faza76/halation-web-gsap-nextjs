@@ -269,7 +269,7 @@ section.work {
 
 .processes {
   height: max-content;
-  background: var(--light4);
+  background: var(--dark);
   color: #000;
   /* padding: 1em 1em 4em 1em; */
 }
@@ -666,6 +666,43 @@ section.work {
 }
 
 .footer.light .location p {
+  color: var(--light3);
+}
+
+.manifesto,
+.processes {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+
+/* .manifesto,
+.processes {
+  transition: background-color 0.5s ease, color 0.5s ease;
+  background-color: var(--light);
+  color: var(--dark);
+} */
+
+.manifesto.light .manifesto-toggle {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.processes.light {
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+.manifesto.light {
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+
+.processes.light .footer-email p,
+.fooprocessester.light .footer-col-header p {
+  color: var(--light3);
+}
+
+.processes.light .location p {
   color: var(--light3);
 }
 
