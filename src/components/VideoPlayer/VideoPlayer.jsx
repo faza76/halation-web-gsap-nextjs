@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Volume2, VolumeX, Maximize } from "lucide-react";
+import { useScroll, useTransform, motion } from 'framer-motion';
 import "./VideoPlayer.css";
 
 const VideoPlayer = () => {
@@ -10,6 +11,14 @@ const VideoPlayer = () => {
   const [showControls, setShowControls] = useState(false);
   const [firstClick, setFirstClick] = useState(true);
   const videoRef = useRef(null);
+  const container = useRef();
+
+  const { scrollYProgress } = useScroll({
+    target: container,
+    offset: ['start end', 'end start']
+  })
+
+  const y = useTransform(scrollYProgress, [0, 1], ["-80%", "80%"]);
 
   useEffect(() => {
     if (videoRef.current) {
@@ -64,7 +73,8 @@ const VideoPlayer = () => {
   };
 
   return (
-    <div className="video-container" onClick={handleVideoClick}>
+    <div className="video-container" ref={container}  onClick={handleVideoClick}>
+      <motion.div style={{y}}>
       <video
         ref={videoRef}
         className="video-player"
@@ -77,6 +87,8 @@ const VideoPlayer = () => {
       >
         Your browser does not support the video tag.
       </video>
+      {/* <img src="work/work1.jpg" alt="" /> */}
+      </motion.div>
 
       {showControls && (
         <div className="video-controls">

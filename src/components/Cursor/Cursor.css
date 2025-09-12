@@ -21,6 +21,10 @@
   will-change: transform;
 }
 
+.cursor.light {
+  background-color: var(--dark);
+}
+
 @media (max-width: 900px) {
   .cursor {
     display: none !important;

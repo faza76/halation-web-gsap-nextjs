@@ -123,18 +123,20 @@ const NavBar = () => {
     <div className="navbar" ref={navbarRef}>
       <div className="navbar-container">
         <div className="logo">
-          <a href="#hero">
-            <h3>Halation</h3>
-            <span></span>
+          <a href="/">
+            <span>
+              {/* <img src="logo.png" alt="" /> */}
+              <h3>Kakavasha</h3>
+            </span>
           </a>
         </div>
 
         <div className="nav-items">
-          <div className="langs">
+          {/* <div className="langs">
             <p className="current-lang">EN</p>
             <p>VN</p>
             <p>ZH</p>
-          </div>
+          </div> */}
 
           <div className="nav-links">
             <a href="#work">
