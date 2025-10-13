@@ -1,0 +1,464 @@
+  <section className="work" id="work">
+          <div className="container">
+            <div className="work-header">
+              <div className="work-header-container">
+                {/* <HiArrowDown size={16} /> */}
+                <p>Selected projects</p>
+                <div className="work-header-all-works">
+                  <RiArrowRightUpLine size={18} />
+                  <p>See All Work</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="projects">
+            {/* <p>Selected projects</p> */}
+              <div className="project-col">
+                {projects
+                  .filter((project) => project.column === 1)
+                  .map((project) => (
+                    <Link to="/work" key={project.id}>
+                      <div className="project">
+                        <div className="project-img">
+                          <img src={project.image} alt="Project Thumbnail" />
+                        </div>
+                        <div className="project-name">
+                          <h2>{project.title}</h2>
+                        </div>
+                        <div className="project-description">
+                          <p>{project.description}</p>
+                        </div>
+                      </div>
+                    </Link>
+                  ))}
+              </div>
+
+              <div className="project-col">
+                {projects
+                  .filter((project) => project.column === 2)
+                  .map((project) => (
+                    <Link to="/work" key={project.id}>
+                      <div className="project">
+                        <div className="project-img">
+                          <img src={project.image} alt="Project Thumbnail" />
+                        </div>
+                        <div className="project-name">
+                          <h2>{project.title}</h2>
+                        </div>
+                        <div className="project-description">
+                          <p>{project.description}</p>
+                        </div>
+                      </div>
+                    </Link>
+                  ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        
+
+        <section className="manifesto" id="manifesto" ref={manifestoRef}>
+          <div className="container">
+            <div className="manifesto-header">
+              <HiArrowRight size={13} />
+              <p>Manifesto</p>
+            </div>
+            <div className="manifesto-title">
+              <h1>
+                We challenge norms, embrace change, pioneer progress. We are
+                innovators merging art and technology to craft experiences that
+                surprise, delight, and evolve.
+              </h1>
+            </div>
+          </div>
+        </section>
+
+        <section className="processes">
+          <div className="container">
+            <div className="process">
+              <div className="divider"></div>
+              <div className="process-title">
+                <RiArrowRightDownLine />
+                <p>Integrate</p>
+              </div>
+              <div className="process-info">
+                {/* <div className="process-icon">
+                  <div className="process-icon-wrapper">
+                    <img src="/processes/icon-1.png" alt="" />
+                  </div>
+                </div> */}
+                <div className="process-description">
+                  <Copy delay={0.5}>
+                    <p>
+                    We turn founders’ visions into remarkable brands by combining strategy, design, and performance marketing, all under one roof. Explore our services.
+                    </p>  
+                  </Copy>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div className="process">
+            <div className="divider"></div>
+              <div className="process-title">
+                <RiArrowRightDownLine />
+                <p>Collaborate</p>
+              </div>
+              <div className="process-info">
+                {/* <div className="process-icon">
+                  <div className="process-icon-wrapper">
+                    <img src="/processes/icon-2.png" alt="" />
+                  </div>
+                </div> */}
+                <div className="process-description">
+                  <Copy delay={0.5}>
+                    <p>
+                      Creativity is a collective process. At Origin, collaboration
+                      is our foundation—merging ideas, talents, and visions to
+                      create experiences that resonate universally.
+                    </p>
+                  </Copy>
+                </div>
+              </div>
+            </div>
+
+            <div className="process">
+            <div className="divider"></div>
+
+              <div className="process-title">
+                <RiArrowRightDownLine />
+                <p>Challenge</p>
+              </div>
+              <div className="process-info">
+                {/* <div className="process-icon">
+                  <div className="process-icon-wrapper">
+                    <img src="/processes/icon-3.png" alt="" />
+                  </div>
+                </div> */}
+                <div className="process-description">
+                  <Copy delay={0.5}>
+                    <p>
+                      We challenge conventions and redefine possibilities. At
+                      Origin, we dare to push boundaries, delivering solutions
+                      that are as bold as they are impactful.
+                    </p>
+                  </Copy>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div className="marquee">
+          <div className="marquee-text">
+            <h1>Explore the essence of Origin Studio</h1>
+          </div>
+        </div>
+
+        {/* <section className="showreel"> */}
+          <VideoPlayer />
+        {/* </section> */}
+
+        <section className="about" id="about">
+          <div className="container">
+            <div className="about-col">
+              <div className="about-header">
+                <HiArrowRight size={13} />
+                <p>Origin Spirit</p>
+              </div>
+              <div className="about-copy">
+                <p>
+                  The Origin Spirit embodies creativity without boundaries.
+                  Whether you’re a lifelong dreamer, a new explorer, or someone
+                  returning to familiar grounds, Origin welcomes those who dare
+                  to imagine. Being part of Origin means embracing inspiration,
+                  collaboration, and limitless potential.
+                </p>
+              </div>
+            </div>
+            <div className="about-col">
+              <div className="cta-btn">
+                <button>Discover more at origin.co</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="gallery">
+          <div className="gallery-wrapper">
+            <div className="row">
+              <div className="img">
+                <img src="/marquee/img1.jpeg" alt="" />
+              </div>
+              <div className="img">
+                <img src="/marquee/img2.jpeg" alt="" />
+              </div>
+              <div className="img">
+                <img src="/marquee/img3.jpeg" alt="" />
+              </div>
+              <div className="img">
+                <img src="/marquee/img4.jpeg" alt="" />
+              </div>
+            </div>
+            <div className="row">
+              <div className="img">
+                <img src="/marquee/img5.jpeg" alt="" />
+              </div>
+              <div className="img">
+                <img src="/marquee/img6.jpeg" alt="" />
+              </div>
+              <div className="img">
+                <img src="/marquee/img7.jpeg" alt="" />
+              </div>
+              <div className="img">
+                <img src="/marquee/img8.jpeg" alt="" />
+              </div>
+            </div>
+            <div className="row">
+              <div className="img">
+                <img src="/marquee/img9.jpeg" alt="" />
+              </div>
+              <div className="img">
+                <img src="/marquee/img10.jpeg" alt="" />
+              </div>
+              <div className="img">
+                <img src="/marquee/img11.jpeg" alt="" />
+              </div>
+              <div className="img">
+                <img src="/marquee/img12.jpeg" alt="" />
+              </div>
+            </div>
+            <div className="row">
+              <div className="img">
+                <img src="/marquee/img13.jpeg" alt="" />
+              </div>
+              <div className="img">
+                <img src="/marquee/img14.jpeg" alt="" />
+              </div>
+              <div className="img">
+                <img src="/marquee/img15.jpeg" alt="" />
+              </div>
+              <div className="img">
+                <img src="/marquee/img16.jpeg" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="team" id="team">
+          <div className="container">
+            <div className="team-header">
+              <HiArrowRight />
+              <p>Team</p>
+            </div>
+
+            <div className="team-intro">
+              <h1>
+                From corners of globe, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; we are
+                united by &nbsp;&nbsp;&nbsp; creativity
+              </h1>
+            </div>
+
+            <div className="team-member tm-1">
+              <div className="team-member-position">
+                <p>Lead Developer</p>
+              </div>
+              <div className="team-member-profile">
+                <div className="team-member-img">
+                  <div className="team-img-gradient"><img src="/team/team-6.jpeg" alt="" /></div>
+                  
+                </div>
+                <div className="team-member-info">
+                  <div className="team-member-name">
+                    <p>
+                      Faza <br />
+                      Akbar
+                    </p>
+                  </div>
+                  <div className="team-member-details">
+                    <div className="team-member-toggle">
+                      <HiArrowRight size={24} />
+                    </div>
+                    <div className="team-member-copy">
+                      <p>
+                        Faza is a skilled developer with expertise in modern web
+                        technologies and a passion for creating seamless user
+                        experiences.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="team-member-index">
+                <p>(01)</p>
+                <h1>Faza Akbar</h1>
+              </div>
+            </div>
+
+            <div className="team-member tm-2">
+              <div className="team-member-position">
+                <p>UI/UX Designer</p>
+              </div>
+              <div className="team-member-profile">
+                <div className="team-member-img">
+                  <div className="team-img-gradient">
+
+                    <img src="/team/team-7.jpg" alt="" />
+                  </div>
+                </div>
+                <div className="team-member-info">
+                  <div className="team-member-name">
+                    <p>
+                      Japar <br />
+                      Shidiq
+                    </p>
+                  </div>
+                  <div className="team-member-details">
+                    <div className="team-member-toggle">
+                      <HiArrowRight size={24} />
+                    </div>
+                    <div className="team-member-copy">
+                      <p>
+                        Japar specializes in crafting intuitive and visually
+                        appealing designs that bring digital products to life.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="team-member-index">
+                <p>(02)</p>
+                <h1>Japar Shidiq</h1>
+              </div>
+            </div>
+
+            <div className="team-member tm-3">
+              <div className="team-member-position">
+                <p>Project Manager</p>
+              </div>
+              <div className="team-member-profile">
+                <div className="team-member-img">
+                  <div className="team-img-gradient">
+                    <img src="/team/team-8.JPG" alt="" />
+                  </div>
+                </div>
+                <div className="team-member-info">
+                  <div className="team-member-name">
+                    <p>
+                      Adhie <br />
+                      Putro
+                    </p>
+                  </div>
+                  <div className="team-member-details">
+                    <div className="team-member-toggle">
+                      <HiArrowRight size={24} />
+                    </div>
+                    <div className="team-member-copy">
+                      <p>
+                        Adhie ensures projects are delivered on time and
+                        within scope, maintaining excellent communication with
+                        clients and the team.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="team-member-index">
+                <p>(03)</p>
+                <h1>Adhie Putro</h1>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="footer" id="contact">
+          <div className="container">
+            <div className="footer-header">
+              <HiArrowRight />
+              <p>Contact</p>
+            </div>
+
+            <div className="footer-title">
+              <h1>Keep in touch</h1>
+            </div>
+
+            <div className="footer-email">
+              <p>We’d love to hear from you</p>
+              <h2>hello@origin.co</h2>
+            </div>
+
+            <div className="footer-content">
+              <div className="footer-col">
+                <div className="footer-col-header">
+                  <p>Our Spaces</p>
+                </div>
+
+                <div className="footer-col-content">
+                  <div className="footer-sub-col">
+                    <div className="location">
+                      <h3>New York</h3>
+                      <p>123 Creative Hub,</p>
+                      <p>5th Avenue, Suite 101</p>
+                      <p>New York, NY, 10010</p>
+                      <p>USA</p>
+
+                      <p>
+                        <HiArrowRight /> View on map
+                      </p>
+                    </div>
+
+                    <div className="location">
+                      <h3>Tokyo</h3>
+                      <p>Innovators Tower,</p>
+                      <p>Shibuya City, 8th Floor</p>
+                      <p>Tokyo, 150-0001</p>
+                      <p>Japan</p>
+
+                      <p>
+                        <HiArrowRight /> View on map
+                      </p>
+                    </div>
+                  </div>
+                  <div className="footer-sub-col">
+                    <div className="location">
+                      <h3>London</h3>
+                      <p>Design District,</p>
+                      <p>Greenwich Peninsula</p>
+                      <p>London, SE10 0ER</p>
+                      <p>UK</p>
+
+                      <p>
+                        <HiArrowRight /> View on map
+                      </p>
+                    </div>
+
+                    <div className="location">
+                      <h3>Singapore</h3>
+                      <p>Marina Bay Financial Center,</p>
+                      <p>10 Marina Blvd, Tower 2</p>
+                      <p>Singapore, 018983</p>
+                      <p>Singapore</p>
+
+                      <p>
+                        <HiArrowRight /> View on map
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="footer-col">
+                <div className="footer-col-header">
+                  <p>Follow Us</p>
+                </div>
+                <div className="footer-sub-col">
+                  <p>Instagram</p>
+                  <p>LinkedIn</p>
+                  <p>Twitter</p>
+                  <p>Behance</p>
+                  <p>Dribbble</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>

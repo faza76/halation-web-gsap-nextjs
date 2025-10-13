@@ -7,11 +7,17 @@
   clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0 100%);
 }
 
-/* .video-player {
+.video-player {
   width: 100%;
   height: 100%;
   object-fit: cover;
-} */
+}
+
+.video-player {
+  width: 100%;
+  height: 100svh;
+  object-fit: cover;
+}
 
 .video-controls {
   position: fixed;

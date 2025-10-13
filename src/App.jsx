@@ -14,7 +14,7 @@ function App() {
   return (
     <ReactLenis root>
       <div className="app">
-        {/* <Header /> */}
+        <Header />
         {/* <AnimatePresence mode="wait" initial={false}> */}
           <Routes location={location} key={location.pathname}>
             <Route index element={<Home />} />

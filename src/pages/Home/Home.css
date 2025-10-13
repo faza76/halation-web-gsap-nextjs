@@ -247,6 +247,7 @@ section.work {
 }
 
 .manifesto {
+  padding: 4rem 0rem;
   position: relative;
   height: max-content;
 }
@@ -386,12 +387,13 @@ section.work {
 
 .about {
   height: max-content;
+  width: 100%;
   padding: 4em 0;
 }
 
 .about .container {
   display: flex;
-  gap: 2em;
+  gap: 0em;
 }
 
 .about .container > div {
@@ -752,7 +754,7 @@ section.work {
   }
 
   .manifesto-title h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
   }
 
   .process-info {

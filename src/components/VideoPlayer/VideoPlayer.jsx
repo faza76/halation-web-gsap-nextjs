@@ -18,7 +18,7 @@ const VideoPlayer = () => {
     offset: ['start end', 'end start']
   })
 
-  const y = useTransform(scrollYProgress, [0, 1], ["-80%", "80%"]);
+  const y = useTransform(scrollYProgress, [0, 1], ["-50%", "50%"]);
 
   useEffect(() => {
     if (videoRef.current) {
