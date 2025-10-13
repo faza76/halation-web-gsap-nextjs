@@ -32,7 +32,7 @@ const Work = () => {
 
         <section className="sp-title">
           <div className="container">
-            <h1>Shadow Beacon by Lightforms</h1>
+            <h1>Natasae Studio - Remake</h1>
           </div>
         </section>
 
@@ -43,13 +43,13 @@ const Work = () => {
         <section className="sp-details">
           <div className="container">
             <div className="sp-details-col">
-              <p className="sp-details-name">Shadow Beacon</p>
+              <p className="sp-details-name">Natasae Studio</p>
 
               <div className="sp-tags">
-                <p>Motion Capture</p>
-                <p>Creative Direction</p>
-                <p>3D</p>
-                <p>Post Production</p>
+                <p>Website Redesign</p>
+                <p>Web Development</p>
+                <p>UI/UX</p>
+                <p>Landing Page</p>
               </div>
 
               <div className="sp-date">
@@ -57,7 +57,7 @@ const Work = () => {
               </div>
 
               <div className="sp-link">
-                <Link to="/">
+                <Link to="https://natasae-remake.vercel.app">
                   <button>
                     <div className="icon">
                       <IoIosArrowRoundForward size={16} />
@@ -68,17 +68,9 @@ const Work = () => {
               </div>
             </div>
             <div className="sp-details-col">
-              <p>Challenge</p>
+              <p>Client Story</p>
               <p>
-                Shadow Beacon is a tribute to the interplay between light and
-                form. During a time when the world seemed paused, we set out to
-                create a piece that celebrates movement, space, and emotion.
-                Combining motion capture with imaginative 3D landscapes, the
-                project envisions a dreamlike realm where light becomes a
-                storyteller. Through thoughtful creative direction and intricate
-                post-production, we crafted a narrative that feels both intimate
-                and expansive—a beacon for those searching for connection and
-                inspiration in uncertain times.
+                Natasae Studio is an architectural and interior design studio dedicated to creating flexible and functional spaces. Our work is rooted in the 'Less is More' concept, guided by innovative thinking, and shaped through close personal collaboration with every client.
               </p>
             </div>
           </div>
@@ -91,18 +83,12 @@ const Work = () => {
         <section className="sp-info">
           <div className="container">
             <div className="sp-info-title">
-              <h3>Challenge</h3>
+              <h3>Client Story</h3>
             </div>
 
             <div className="sp-info-desc">
               <p>
-                Shadow Beacon explores the idea of finding clarity in moments of
-                obscurity. Inspired by the duality of light and shadow, we
-                imagined a character who navigates a surreal world, guided by
-                beams of light that reveal hidden paths and truths. This
-                character, free from physical constraints, embodies the
-                liberation from everyday burdens, moving fluidly through spaces
-                that are both familiar and otherworldly.
+                They are focus on realistic and buildable designs, we create scalable solutions that reflect quiet elegance and long-term value. Every project is an exercise in efficiency, innovation, and technical excellence with carefully selected materials.
               </p>
             </div>
           </div>

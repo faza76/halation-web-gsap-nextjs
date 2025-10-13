@@ -404,11 +404,11 @@ const Home = () => {
                   </div>
                 </div> */}
                 <div className="process-description">
-                  <Copy delay={0.1}>
+                  {/* <Copy delay={0.1}> */}
                     <p>
                     We turn founders’ visions into remarkable brands by combining strategy, design, and performance marketing, all under one roof. Explore our services.
                     </p>  
-                  </Copy>
+                  {/* </Copy> */}
                   
                 </div>
               </div>
@@ -427,13 +427,13 @@ const Home = () => {
                   </div>
                 </div> */}
                 <div className="process-description">
-                  <Copy delay={0.1}>
+                  {/* <Copy delay={0.1}> */}
                     <p>
                       Creativity is a collective process. At Origin, collaboration
                       is our foundation—merging ideas, talents, and visions to
                       create experiences that resonate universally.
                     </p>
-                  </Copy>
+                  {/* </Copy> */}
                 </div>
               </div>
             </div>
@@ -452,13 +452,13 @@ const Home = () => {
                   </div>
                 </div> */}
                 <div className="process-description">
-                  <Copy delay={0.1}>
+                  {/* <Copy delay={0.1}> */}
                     <p>
                       We challenge conventions and redefine possibilities. At
                       Origin, we dare to push boundaries, delivering solutions
                       that are as bold as they are impactful.
                     </p>
-                  </Copy>
+                  {/* </Copy> */}
                 </div>
               </div>
             </div>
@@ -483,7 +483,7 @@ const Home = () => {
                 <p>Origin Spirit</p>
               </div>
               <div className="about-copy">
-                <Copy>
+                {/* <Copy> */}
                   <p>
                     The Origin Spirit embodies creativity without boundaries.
                     Whether you’re a lifelong dreamer, a new explorer, or someone
@@ -491,7 +491,7 @@ const Home = () => {
                     to imagine. Being part of Origin means embracing inspiration,
                     collaboration, and limitless potential.
                   </p>
-                </Copy>
+                {/* </Copy> */}
               </div>
             </div>
             <div className="about-col">
@@ -571,12 +571,12 @@ const Home = () => {
             </div>
 
             <div className="team-intro">
-              <Copy>
+              {/* <Copy> */}
                 <h1>
                   From corners of globe, we are
                   united by creativity
                 </h1>
-              </Copy>
+              {/* </Copy> */}
               
             </div>
 
@@ -705,7 +705,7 @@ const Home = () => {
 
             <div className="footer-email">
               <p>We’d love to hear from you</p>
-              <h2>hello@origin.co</h2>
+              <h2>hello@kakavasha.com</h2>
             </div>
 
             <div className="footer-content">
@@ -717,53 +717,22 @@ const Home = () => {
                 <div className="footer-col-content">
                   <div className="footer-sub-col">
                     <div className="location">
-                      <h3>New York</h3>
-                      <p>123 Creative Hub,</p>
-                      <p>5th Avenue, Suite 101</p>
-                      <p>New York, NY, 10010</p>
-                      <p>USA</p>
+                      <h3>Bandung (Head Office)</h3>
+                      <p>Ciwaruga, Kab. Bandung Barat</p>
+                      <p>Cluster Sangkuriang, 1H</p>
+                      <p>Call: 082216224401,Pos: 40559</p>
+                      <p>Indonesia</p>
 
-                      <p>
-                        <HiArrowRight /> View on map
-                      </p>
+                      <a href="https://maps.app.goo.gl/KYczhnkZNr6FW3En7">
+                        <p>
+                          <HiArrowRight /> View on map
+                        </p>
+                      </a>
                     </div>
 
-                    <div className="location">
-                      <h3>Tokyo</h3>
-                      <p>Innovators Tower,</p>
-                      <p>Shibuya City, 8th Floor</p>
-                      <p>Tokyo, 150-0001</p>
-                      <p>Japan</p>
-
-                      <p>
-                        <HiArrowRight /> View on map
-                      </p>
-                    </div>
                   </div>
                   <div className="footer-sub-col">
-                    <div className="location">
-                      <h3>London</h3>
-                      <p>Design District,</p>
-                      <p>Greenwich Peninsula</p>
-                      <p>London, SE10 0ER</p>
-                      <p>UK</p>
-
-                      <p>
-                        <HiArrowRight /> View on map
-                      </p>
-                    </div>
-
-                    <div className="location">
-                      <h3>Singapore</h3>
-                      <p>Marina Bay Financial Center,</p>
-                      <p>10 Marina Blvd, Tower 2</p>
-                      <p>Singapore, 018983</p>
-                      <p>Singapore</p>
-
-                      <p>
-                        <HiArrowRight /> View on map
-                      </p>
-                    </div>
+                   
                   </div>
                 </div>
               </div>

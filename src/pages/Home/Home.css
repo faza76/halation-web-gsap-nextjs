@@ -151,6 +151,8 @@ section.work {
 
 .projects {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 4em;
 }
 
@@ -170,7 +172,8 @@ section.work {
 }
 
 .project-img {
-  width: 100%;
+  width: 350px;
+  height: 500px;
   aspect-ratio: 4/5;
   overflow: hidden;
 }
