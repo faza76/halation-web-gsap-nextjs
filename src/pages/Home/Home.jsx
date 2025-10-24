@@ -563,7 +563,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="team" id="team">
+        {/* <section className="team" id="team">
           <div className="container">
             <div className="team-header">
               <HiArrowRight />
@@ -571,12 +571,10 @@ const Home = () => {
             </div>
 
             <div className="team-intro">
-              {/* <Copy> */}
                 <h1>
                   From corners of globe, we are
                   united by creativity
                 </h1>
-              {/* </Copy> */}
               
             </div>
 
@@ -690,7 +688,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section className="footer" id="contact">
           <div className="container">
